@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">a_shop</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="count_money">合计：￥%s</string>
+    <string name="count_goods">结算（%s）</string>
+    
+    <string name="action_settings">Settings</string>
+    
+    <string name="myShop">我的购物车</string>
+    <string name="updateShopNum">修改商品数量</string>
+    <string name="updateAddress">修改地址</string>
+    <string name="numberSub">-</string>
+    <string name="numberAdd">+</string>
+    <string name="checkOut">结算</string>
+    
+    <string name="sure">确定</string>
+    <string name="sureOrder">确认订单</string>
+    <string name="leaveMeassge">对食物的要求</string>
+    <string name="desk">台号</string>
+    <string name="backtomain">返回登录</string>
+    <string name="sectitle">返回登录</string>
+    
+</resources>

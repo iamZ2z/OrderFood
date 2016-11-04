@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_second" />
+
+    <include layout="@layout/line_h" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/addressRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <TextView
+                    android:id="@+id/addresseeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp" />
+                <!-- 收货人区地址 -->
+
+                <TextView
+                    android:id="@+id/smearedAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp" />
+                <!-- next图标 -->
+
+                <TextView
+                    android:id="@+id/addressNext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/addresseeName"
+                    android:drawableRight="@drawable/next" />
+                <!-- 详细地址 -->
+
+                <TextView
+                    android:id="@+id/detailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/addressNext"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="15dp"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/leaveWorld"
+                    android:layout_width="260dp"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="@string/leaveMeassge"
+                    android:textSize="15sp" />
+
+                <NumberPicker
+                    android:id="@+id/desknum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desk"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <com.main.NoScrollListView
+                android:id="@+id/checkOutListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        android:orientation="vertical" >
+
+        <!-- 显示商品数量和总金额 -->
+
+        <TextView
+            android:id="@+id/checkOutAllPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/red" />
+        <!-- 确定按钮 -->
+
+        <Button
+            android:id="@+id/sureCheckOut"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_rect_bg_red"
+            android:text="@string/sure"
+            android:textColor="#F00" />
+    </LinearLayout>
+
+</LinearLayout>

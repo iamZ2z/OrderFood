@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="sv_blue">#688fdb</color>
+    <color name="light_green">#C1FFC1</color>
+    <color name="red">#FF0000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="orange">#FFDEAD</color>
+    <color name="black">#000000</color>
+    <color name="menu_section_header">#FFDDDDDD</color>
+
+</resources>
